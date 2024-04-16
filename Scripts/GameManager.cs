@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<GameManager>();
+                instance = FindAnyObjectByType<GameManager>();
                 if (instance == null)
                 {
                     GameObject obj = new GameObject("GameManager");
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        Resolution();
+        //Resolution();
     }
 
     private void Start()
@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
     //게임 오버 시 호출
     public void GameOver()
     {
+        AdmobManager.Instance.ShowFrontAd();
         gameOverPanel.SetActive(true);
         isGameOver = true;
     }

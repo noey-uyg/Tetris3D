@@ -13,7 +13,7 @@ public class PoolManager : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<PoolManager>();
+                instance = FindAnyObjectByType<PoolManager>();
                 if (instance == null)
                 {
                     GameObject obj = new GameObject("PoolManager");
