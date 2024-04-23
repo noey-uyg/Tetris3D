@@ -8,3 +8,7 @@
 - 수평 스와이프를 통해 시점 변경이 가능하고,
 - 카메라가 보는 방향을 기준으로 테트로미노가 앞뒤좌우로 이동합니다.
 - 점수 = (2^(제거된 줄 수 -1))^(콤보 카운트)
+
+# 시연영상
+### 전체 시연
+[![Video Label](http://img.youtube.com/vi/scFviW9Tx8E/0.jpg)](https://youtu.be/scFviW9Tx8E)
